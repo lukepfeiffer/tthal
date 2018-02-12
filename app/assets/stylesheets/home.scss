@@ -1,0 +1,43 @@
+.content{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+
+  .image{
+    margin: 0;
+    padding: 0;
+    width: 33.333333%;
+    position: relative;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    .description{
+      display: none;
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      z-index: 1;
+
+      h1{
+        font-size: 2.2em;
+        margin: 0;
+        color: $aquamarine;
+      }
+
+      p{
+        color: #fff;
+      }
+    }
+  }
+}

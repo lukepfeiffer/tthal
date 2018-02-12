@@ -10,4 +10,14 @@ $(document).ready( function(){
     $(".modal-parent").hide();
     $(".fa-bars").show();
   });
+
+  $(".content").on("mouseover", ".image", function(){
+    $(".description").fadeOut(100);
+    integer = $(this).data("number");
+    $("." + integer).fadeIn(100);
+  });
+
+  $(".content").on("mouseout", ".image", function(){
+    $(".description").fadeOut(100);
+  });
 });

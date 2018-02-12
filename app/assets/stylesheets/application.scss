@@ -2,6 +2,7 @@
 @import "base/base";
 @import "neat/neat";
 @import "navbar";
+@import "home";
 
 *{
   font-family: "Roboto";
@@ -9,4 +10,13 @@
 
 body{
   margin: 0;
+}
+
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 }

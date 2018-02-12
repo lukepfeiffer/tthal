@@ -1,0 +1,7 @@
+.content
+  - 9.times do |n|
+    .image{ data: {number: n} }
+      %span= image_tag "https://www.puresoulboutique.com/wp-content/uploads/2015/05/900x900.jpg"
+      .description{class: n}
+        %h1 Some title
+        %p.subdetails Some details
