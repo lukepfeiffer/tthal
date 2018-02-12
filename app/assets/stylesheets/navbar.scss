@@ -15,8 +15,23 @@
 
   .title{
     h1{
+      font-weight: 500;
+      color: #111;
       margin: 0;
       font-size: 25px;
+      transition: color .25s ease;
+
+      &:hover{
+        cursor: pointer;
+        color: $aquamarine;
+        transition: color .25s ease;
+
+      }
+
+      @media only screen and (max-device-width: 768px) {
+        font-size: 3.5em;
+        margin-top: 2em;
+      }
     }
   }
 
@@ -32,17 +47,95 @@
 
     a{
       font-weight: bold;
+      color: $soft-gray;
+      padding: 5px;
+
+      transition: color .25s ease;
+
+      &:hover{
+        cursor: pointer;
+        color: $aquamarine;
+        transition: color .25s ease;
+      }
+    }
+
+    .current_path_link_project{
+    }
+
+    .current_path_link_about{
     }
 
     .mobile{
       display: none;
+      width: 100%;
 
       @media only screen and (max-device-width: 768px) {
         display: block;
+        .fa-bars{
+          margin-top: 2.1em;
+          font-size: 2.5em;
+        }
       }
 
-      .mobile-links{
+      .modal-container{
+        display: flex;
+      }
+
+      .modal-parent{
+        width: 100%;
+        height: 100%;
+        position: fixed;
         display: none;
+        top: 0;
+        left: 0;
+      }
+
+
+      .overlay{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -15%;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+      }
+    }
+
+    .mobile-links{
+      text-align: center;
+
+      .top-right{
+        margin: 1em 1em 0 1em;
+        font-size: 3em;
+        text-align: right;
+      }
+
+      a{
+        display: block;
+        font-size: 2em;
+        margin: 0 0 2em 0;
+      }
+      .wrapper {
+        min-height: 65%;
+        height: auto !important;
+        margin: 0 auto -142px;
+      }
+
+      .bottom, .push {
+          height: 142px;
+      }
+
+      .bottom{
+        border-top: 1px solid #aaa;
+        margin: 0;
+        padding: 3em 0;
+
+        a{
+          font-size: 2.5em;
+          display: inline;
+          margin: 1em;
+        }
       }
     }
 
