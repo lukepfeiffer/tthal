@@ -1,3 +1,8 @@
 @import "bourbon";
 @import "base/base";
-@import "neat/neat"
+@import "neat/neat";
+@import "navbar";
+
+*{
+  font-family: "Roboto";
+}

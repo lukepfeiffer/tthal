@@ -1,0 +1,25 @@
+%navigation.navbar
+  .title
+    %h1 Tamarra Thal
+
+  .actions
+    .desktop
+      = link_to "Projects", "/"
+      = link_to "About", "/"
+      = link_to "/" do
+        %i.fab.fa-linkedin
+      = link_to "/" do
+        %i.fab.fa-twitter-square
+
+    .mobile
+      %i.fa.fa-bars
+
+      .mobile-links
+        = link_to "Projects", "/"
+        = link_to "About", "/"
+
+        .bottom
+          = link_to "/" do
+            %i.fab.fa-linkedin
+          = link_to "/" do
+            %i.fab.fa-twitter-square

@@ -1,0 +1,56 @@
+.navbar{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+
+  width: 92%;
+  margin: 0 auto;
+  height: 75px;
+
+  .title{
+    h1{
+      margin: 0;
+      font-size: 25px;
+    }
+  }
+
+  .actions, .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .actions{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+
+    a{
+      font-weight: bold;
+    }
+
+    .mobile{
+      display: none;
+
+      @media only screen and (max-device-width: 768px) {
+        display: block;
+      }
+
+      .mobile-links{
+        display: none;
+      }
+    }
+
+    .desktop{
+      font-size: 18px;
+      @media only screen and (max-device-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
