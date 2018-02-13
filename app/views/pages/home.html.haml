@@ -1,7 +1,8 @@
 .content
   - 9.times do |n|
     .image{ data: {number: n} }
+      .img-overlay
       %span= image_tag "https://www.puresoulboutique.com/wp-content/uploads/2015/05/900x900.jpg"
       .description{class: n}
-        %h1 Some title
-        %p.subdetails Some details
+        %h1.img-title{ data: {number: n} } Some title
+        %p.subdetails SOME DETAILS

@@ -12,10 +12,11 @@
   width: 92%;
   margin: 0 auto;
   height: 75px;
+  padding: 2.9em .5em;
 
   .title{
     h1{
-      font-weight: 500;
+      font-weight: 600;
       color: #111;
       margin: 0;
       font-size: 25px;
@@ -25,7 +26,6 @@
         cursor: pointer;
         color: $aquamarine;
         transition: color .25s ease;
-
       }
 
       @media only screen and (max-device-width: 768px) {
