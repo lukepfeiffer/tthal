@@ -1,0 +1,52 @@
+$link-color: #333;
+.footer{
+  padding-top: 2.8em;
+  .footer-link-to-top{
+    color: $soft-gray;
+    text-align: center;
+    font-size: 0.9em;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .contact{
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    width: 50%;
+    margin: 0 auto;
+    height: 75px;
+    padding: 2.9em .5em;
+
+    .option{
+      color: $link-color;
+      display: inline;
+      padding: 1em;
+
+      &:hover{
+        color: darken($link-color, 5%);
+      }
+
+      .svg-inline--fa{
+        font-size: 23px;
+      }
+
+      a{
+        color: $link-color;
+
+        &:hover{
+          color: darken($link-color, 5%);
+        }
+      }
+    }
+  }
+}
