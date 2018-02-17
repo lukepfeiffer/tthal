@@ -1,0 +1,17 @@
+= form_for project do |f|
+  %fieldset
+    %dl
+      %dt= f.label :title
+      %dd= f.text_field :title
+
+      %dt= f.label :subtitle
+      %dd= f.text_field :subtitle
+
+      %dt= f.label :details
+      %dd= f.text_field :details
+
+      %dt= f.label :body
+      %dd= f.trix_editor :body, id: "project_editor"
+
+  %fieldset.actions
+    = f.submit "Save"
